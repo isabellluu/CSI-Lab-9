@@ -20,6 +20,17 @@
  int i4;
  int i5;
  int i6;
+ int num = 100000;
+ int num1 = 10000;
+ int num2 = 1000;
+ int num3 = 100;
+ int num4 = 10; 
+ int num5 = 1;
+ int ii2;
+ int ii3;
+ int ii4;
+ int ii5;
+ int ii6;
  
  Step 3/4:
  I. Gain Input from users and name function prototypes
@@ -35,7 +46,7 @@
     e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.
  
  III. Display Data
-    a. Use printf to display the ints i1-i5 with spaces in between each integer
+    a. Use printf to display the ints i1-i6 with spaces in between each integer
  */
  
 #include <stdio.h>
@@ -93,26 +104,28 @@ int main()
    // printf("%i", ii2);
     //e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.
     
-    i2 = division2(ii2, num1);
-    ii3 = findmod2(ii2, num1);
+    i2 = division(ii2, num1);
+    ii3 = findmod(ii2, num1);
     
-    i3 = division3(ii3, num2);
-    ii4 = findmod3(ii3, num2);
+    i3 = division(ii3, num2);
+    ii4 = findmod(ii3, num2);
     
-    i4 = division4(ii4, num3);
-    ii5 = findmod4(ii4, num3);
+    i4 = division(ii4, num3);
+    ii5 = findmod(ii4, num3);
     
-    i5 = division5(ii5, num4);
-    ii6 = findmod5(ii5, num4);
+    i5 = division(ii5, num4);
+    ii6 = findmod(ii5, num4);
     
-    i6 = division6(ii6, num5);
+    i6 = division(ii6, num5);
     
 
 
     
     //III. Display Data
-    //a. Use printf to display the ints i1-i5 with spaces in between each integer
-    printf("Your number is: %i %i %i %i %i %i\n", i1, i2, i3, i4, i5, i6);
+    //a. Use printf to confirm number inputed
+    printf("is the number inputed.");
+    //b. Use printf to display the ints i1-i6 with spaces in between each integer
+    printf("\nYour number is: %i %i %i %i %i %i\n", i1, i2, i3, i4, i5, i6);
     
     return 0;
 }
@@ -120,9 +133,8 @@ int main()
 /*************************************** Function division ******************************************/
 int division (int a, int num)
 {   
-  /*b. Use integer divison to divide a by b and save to int divided
-    c. Call function mod
-    e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.*/
+  //b. Use integer divison to divide a by b and save to int divided
+    
     
     // define variables
     int i1;
@@ -139,9 +151,7 @@ int division (int a, int num)
 int findmod(int a, int num)
 {   
     /*b. Use integer divison to divide a by b and save to int divided
-     c. Call function mod
-     d. Use module to save the remainder of the answer
-     e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.*/
+     c. Use module to save the remainder of the answer*/
     
     // define variables
     int i1;
@@ -155,173 +165,3 @@ int findmod(int a, int num)
     return (ii2);
 }
 
-/*************************************** Function division ******************************************/
-int division2 (int ii2, int num1)
-{   
-    /*b. Use integer divison to divide a by b and save to int divided
-     c. Call function mod
-     d. Use module to save the remainder of the answer
-     e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.*/
-    
-    // define variables
-    int i2;
-    
-    //perform calculation
-    i2 = ii2/num1;   
-    
-    return (i2);
-}
-
-
-/********************************** Function findmod *************************************************/
-
-int findmod2(int ii2, int num1)
-{   
-    /*b. Use integer divison to divide a by b and save to int divided
-     c. Call function mod
-     d. Use module to save the remainder of the answer
-     e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.*/
-    
-    // define variables
-    int i2;
-    int ii3;
-    
-    //perform calculation
-    i2 = ii2/num1;
-    ii3 = ii2 % num1;
-    
-    return (ii3);
-}
-
-/*************************************** Function division ******************************************/
-int division3(int ii3, int num2)
-{   
-    /*b. Use integer divison to divide a by b and save to int divided
-     c. Call function mod
-     d. Use module to save the remainder of the answer
-     e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.*/
-    
-    // define variables
-    int i3;
-    
-    //perform calculation
-    i3 = ii3/num2;   
-    
-    return (i3);
-}
-
-
-/********************************** Function findmod *************************************************/
-
-int findmod3 (int ii3, int num2)
-{   
-    /*b. Use integer divison to divide a by b and save to int divided
-     c. Call function mod
-     d. Use module to save the remainder of the answer
-     e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.*/
-    
-    // define variables
-    int i3;
-    int ii4;
-    
-    //perform calculation
-    i3 = ii3/num2;
-    ii4 = ii3 % num2;
-    
-    return (ii4);
-}
-
-
-/*************************************** Function division ******************************************/
-int division4 (int ii4, int num3)
-{   
-    /*b. Use integer divison to divide a by b and save to int divided
-     c. Call function mod
-     d. Use module to save the remainder of the answer
-     e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.*/
-    
-    // define variables
-    int i4;
-    
-    //perform calculation
-    i4 = ii4/num3;
-    
-    return (i4);
-}
-
-
-/********************************** Function findmod *************************************************/
-
-int findmod4 (int ii4, int num3)
-{   
-    /*b. Use integer divison to divide a by b and save to int divided
-     c. Call function mod
-     d. Use module to save the remainder of the answer
-     e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.*/
-    
-    // define variables
-    int i4;
-    int ii5;
-    
-    //perform calculation
-    i4 = ii4/num3;
-    ii5 = ii4 % num3;
-    
-    return (ii5);
-}
-
-
-/*************************************** Function division ******************************************/
-int division5 (int ii5, int num4)
-{   
-    /*b. Use integer divison to divide a by b and save to int divided
-     c. Call function mod
-     d. Use module to save the remainder of the answer
-     e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.*/
-    
-    // define variables
-    int i5;
-    
-    //perform calculation
-    i5 = ii5/num4;
-    
-    return (i5);
-}
-
-
-/********************************** Function findmod *************************************************/
-
-int findmod5 (int ii5, int num4)
-{
-    /*b. Use integer divison to divide a by b and save to int divided
-     c. Call function mod
-     d. Use module to save the remainder of the answer
-     e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.*/
-    
-    // define variables
-    int i4;
-    int ii6;
-    
-    //perform calculation
-    i4 = ii5/num4;
-    ii6 = ii5 % num4;
-    
-    return (ii6);
-}
-
-/*************************************** Function division ******************************************/
-int division6 (int ii6, int num5)
-{
-    /*b. Use integer divison to divide a by b and save to int divided
-     c. Call function mod
-     d. Use module to save the remainder of the answer
-     e. Repeat steps a-d four more times and save to ints i1, i2, i3 ect.*/
-    
-    // define variables
-    int i6;
-    
-    //perform calculation
-    i6 = ii6/num5;
-    
-    return (i6);
-}
